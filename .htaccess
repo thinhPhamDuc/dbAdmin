@@ -1,0 +1,3 @@
+ErrorDocument 404 http://localhost/dbAdmin/resource/view/pages/error/404.php
+ErrorDocument 500 http://localhost/dbAdmin/resource/view/pages/error/500.php
+ErrorDocument 500 http://localhost/dbAdmin/resource/view/pages/error/401.php
