@@ -18,12 +18,12 @@ function sendEmail($email, $name, $title, $content)
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'nguyenduyhung9396@gmail.com';
-    $mail->Password = 'hylpjbajejhgqrio';
+    $mail->Username = $useremail;
+    $mail->Password = $passwordEmail;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('nguyenduyhung9396@gmail.com', 'Web Admin');
+    $mail->setFrom($useremail, 'Web Admin');
 
     $mail->addAddress($email, $name);
 
